@@ -1,0 +1,1088 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ayham Ahmad Portofilo</title>
+    <!-- J QUERY CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--/J QUERY CDN -->
+    <!-- BOOTSTRAP CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- /BOOTSTRAP CDN -->
+    <!-- ICON CDN -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css" />
+    <!--/ICON CDN -->
+    <!-- LINK CSS FILE -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!--/LINK CSS FILE -->
+    <!-- ISOTOPES PLUGIN -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <!--/ISOTOPES PLUGIN -->
+    <!-- OWL CAROUSEL -->
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css" />
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <!--/OWL CAROUSEL -->
+    <!-- AOS ANIMATION CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!--/AOS ANIMATION CSS -->
+  </head>
+  <body>
+    <!-- ======================================== THEME CHANGER======================================== -->
+    <div
+      class="theme_btn dropdown-toggle"
+      id="menu1"
+      data-toggle="dropdown"
+      data-aos="zoom-in"
+    >
+      <span class="material-icons-outlined">settings</span>
+    </div>
+    <div class="theme_box dropdown-menu" role="menu">
+      <div class="theme_mode">
+        <div class="light_mode">
+          <img
+            src="images/light_mode.png"
+            alt=""
+            style="border: 2px solid #000"
+          />
+          <label for="">Light Mode</label>
+        </div>
+        <div class="dark_mode">
+          <img src="images/dark_mode.png" alt="" />
+          <label for="">Dark Mode</label>
+        </div>
+      </div>
+      <div class="theme_colors">
+        <label for="">Colors: </label>
+        <div class="row mx-auto theme_shades">
+          <span
+            data-color-code="#A97AFD"
+            style="background: #a97afd; border: 2px solid var(--black_color)"
+          ></span>
+          <span data-color-code="#87c0de" style="background: #87c0de"></span>
+          <span data-color-code="#4070F4" style="background: #4070f4"></span>
+          <span data-color-code="#048654" style="background: #048654"></span>
+          <span data-color-code="#086391" style="background: #086391"></span>
+          <span data-color-code="#f88b6d" style="background: #f88b6d"></span>
+          <span data-color-code="#e51b4d" style="background: #e51b4d"></span>
+          <span data-color-code="#5ed5ed" style="background: #5ed5ed"></span>
+          <span data-color-code="#F7AD19" style="background: #f7ad19"></span>
+          <span data-color-code="#24cbc7" style="background: #24cbc7"></span>
+          <span data-color-code="#FE87AC" style="background: #fe87ac"></span>
+          <span data-color-code="#00ECC2" style="background: #00ecc2"></span>
+        </div>
+      </div>
+    </div>
+    <!-- ========================================/THEME CHANGER======================================== -->
+    <!-- ======================================== NAVBAR PORTION======================================== -->
+    <div class="container-fluid Navbar_Portion" id="Navbar_Portion">
+      <div class="col-xl-10 mx-auto">
+        <div class="col-12 d-flex align-items-center justify-content-between">
+          <div class="nav_logo">
+            <svg
+              id="logo"
+              width="200"
+              height="40"
+              viewBox="0 0 453 138"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M40.3132 99.5581C37.6912 99.5581 35.7012 97.9943 34.3434 94.8669C33.0324 91.6525 32.1428 85.7016 31.6746 77.0142C31.3937 72.4967 31.1128 66.6327 30.8318 59.4221C27.5543 61.2465 24.2534 63.1577 20.9291 65.1558L18.5412 77.4051C18.073 79.7507 17.7453 81.4448 17.558 82.4873C17.3707 83.4429 17.0195 84.9197 16.5045 86.9178C16.0363 88.916 15.6149 90.3928 15.2403 91.3484C14.9126 92.2172 14.421 93.3466 13.7655 94.7365C13.1568 96.1265 12.5247 97.1256 11.8692 97.7337C10.1836 99.2975 8.38101 100.079 6.46134 100.079C4.54167 100.079 2.97315 98.8196 1.7558 96.3003C0.585266 93.6941 0 90.5231 0 86.7875C0 85.745 0.0468213 84.6591 0.140464 83.5297C0.749141 75.1898 5.36104 67.5883 13.9762 60.7252C16.4109 49.1709 20.4609 29.711 26.1263 2.34561C27.6246 0.78187 29.5208 0 31.8151 0C32.3301 0 32.8217 0 33.29 0C33.7582 0 34.32 0 34.9755 0C35.6778 0 36.544 0.260622 37.5741 0.781867C37.6209 4.86496 38.6978 30.1889 40.8048 76.7535C40.9921 80.6629 41.2496 83.2257 41.5773 84.4419C41.9051 85.5713 42.4669 86.136 43.2629 86.136C44.5739 86.136 46.3063 84.4854 48.4601 81.1841C50.6607 77.8829 52.6272 73.7564 54.3595 68.8045L56.326 77.6657L54.6405 81.8357C49.7242 93.6506 44.9485 99.5581 40.3132 99.5581ZM29.1463 22.6742L23.0361 54.3399C26.3136 52.255 28.7483 50.7347 30.3402 49.779L29.1463 22.6742ZM11.518 72.0623C7.16366 76.1454 4.98647 80.1416 4.98647 84.051C4.98647 86.831 5.54833 88.221 6.67204 88.221C7.51482 88.221 8.19373 87.0916 8.70876 84.8329C9.31744 82.4004 10.2539 78.1435 11.518 72.0623Z"
+                fill="#050202"
+              />
+              <path
+                d="M62.146 138C59.4771 138 57.1829 136.48 55.2632 133.439C53.3436 130.485 52.3837 126.142 52.3837 120.408C52.3837 113.371 54.3034 106.508 58.1427 99.8187C55.4271 99.3843 53.2499 97.7337 51.6112 94.8669C49.9724 92 49.153 87.9603 49.153 82.7479C49.153 80.3154 49.3169 76.6667 49.6447 71.8017C49.9724 66.9367 50.3236 61.6808 50.6982 56.034C51.0727 50.3872 51.4707 44.3928 51.8921 38.051C53.3436 37.0954 54.678 36.6176 55.8953 36.6176C57.1127 36.6176 58.0257 36.7044 58.6344 36.8782C59.243 37.0519 59.8283 37.7035 60.3902 38.8329C60.952 39.9622 61.2329 41.5694 61.2329 43.6544L58.9153 76.8839C58.8217 78.2738 58.7748 79.2295 58.7748 79.7507C58.7748 84.8763 60.039 87.4391 62.5674 87.4391C64.8616 87.4391 66.7345 85.441 68.1859 81.4448C68.3264 79.4466 68.6775 73.7129 69.2394 64.2436C69.8012 54.6874 70.2695 47.2597 70.644 41.9603C71.0654 40.3097 71.9316 39.0066 73.2426 38.051C74.6004 37.0954 75.7007 36.6176 76.5435 36.6176C78.0418 36.6176 79.3996 36.9651 80.617 37.6601L77.3161 85.745C82.7942 87.5694 86.0717 94.5628 87.1485 106.725C86.9613 108.376 86.0716 110.982 84.4797 114.544C83.5433 103.685 80.9681 97.0822 76.7542 94.7365L75.6305 111.026C75.1155 118.844 73.7811 125.273 71.6273 130.312C69.4735 135.437 66.3131 138 62.146 138ZM57.8618 117.932C57.8618 120.799 58.2364 122.927 58.9855 124.317C59.7347 125.707 60.7179 126.402 61.9353 126.402C63.1994 126.402 64.1593 125.447 64.8148 123.535C65.4703 121.624 65.9853 117.802 66.3599 112.068L67.2729 97.7337C61.1393 103.641 58.0023 110.374 57.8618 117.932Z"
+                fill="#050202"
+              />
+              <path
+                d="M103.395 84.4419L105.081 55.6431C105.081 53.2974 104.753 51.3428 104.097 49.779C103.442 48.2153 102.389 47.4334 100.937 47.4334C99.4856 47.4334 98.2448 48.5194 97.2148 50.6912C96.2315 52.7762 95.5058 55.5562 95.0376 59.0312C94.7098 63.983 94.2182 71.237 93.5627 80.7932C92.9072 90.2625 92.4858 96.4306 92.2985 99.2975H82.9577C86.3288 46.0434 88.3655 13.3352 89.0678 1.1728C90.0511 0.477808 91.3855 0.13031 93.0711 0.13031C96.7231 0.13031 98.5492 2.12842 98.5492 6.12464V6.90651C97.7532 20.5458 96.9104 32.5345 96.0208 42.8725C98.5023 38.7025 101.312 36.6176 104.449 36.6176C107.586 36.6176 110.067 38.0944 111.893 41.0482C113.719 44.0019 114.632 47.7375 114.632 52.255C114.632 53.4712 114.492 55.7299 114.211 59.0312C113.134 72.0623 112.596 79.7073 112.596 81.966C112.596 86.0491 113.321 88.0907 114.773 88.0907C115.99 88.0907 117.278 86.6138 118.636 83.6601C120.04 80.6195 121.164 75.9717 122.007 69.7167C123.599 72.8442 124.558 75.3201 124.886 77.1445C122.451 92.2606 118.144 99.8187 111.963 99.8187C109.061 99.8187 106.907 98.1681 105.502 94.8669C104.097 91.5656 103.395 88.0907 103.395 84.4419Z"
+                fill="#050202"
+              />
+              <path
+                d="M150.385 99.949C146.078 99.949 143.222 97.169 141.817 91.6091C139.382 97.2559 136.245 100.079 132.406 100.079C128.613 100.079 125.406 97.6903 122.784 92.9122C120.209 88.1341 118.921 81.8357 118.921 74.017C118.921 62.6365 120.724 53.5581 124.329 46.7819C127.934 40.0057 132.5 36.6176 138.024 36.6176C138.165 36.6176 138.305 36.6176 138.446 36.6176C140.787 36.6176 142.941 37.356 144.907 38.8329C146.171 37.356 147.693 36.6176 149.472 36.6176C151.298 36.6176 152.609 37.0519 153.405 37.9207C152.984 44.3494 152.539 50.6912 152.071 56.9462C151.603 63.1143 151.275 67.5014 151.088 70.1077C150.666 76.0151 150.456 80.272 150.456 82.8782C150.456 86.3532 151.205 88.0907 152.703 88.0907C153.873 88.0907 155.114 86.6572 156.425 83.7904C157.736 80.8366 158.883 76.2323 159.867 69.9773C161.224 72.2361 162.161 74.7554 162.676 77.5354C161.318 85.7885 159.492 91.6091 157.198 94.9972C154.904 98.2984 152.633 99.949 150.385 99.949ZM139.078 46.7819C136.081 46.7819 133.693 48.9103 131.914 53.1671C130.182 57.3371 129.152 63.5921 128.824 71.932C128.777 72.7139 128.754 73.4523 128.754 74.1473C128.754 78.4042 129.292 81.7923 130.369 84.3116C131.493 86.831 132.921 88.0907 134.653 88.0907C137.603 88.0907 139.827 84.2247 141.325 76.4929L143.011 48.3456C141.653 47.3031 140.342 46.7819 139.078 46.7819Z"
+                fill="#050202"
+              />
+              <path
+                d="M177.414 99.2975L180.083 56.034C180.083 53.6015 179.755 51.6034 179.1 50.0397C178.491 48.389 177.391 47.5637 175.799 47.5637C174.207 47.5637 172.896 48.9972 171.866 51.864C170.836 54.644 170.18 57.5977 169.899 60.7252C168.261 82.3569 167.348 95.2144 167.16 99.2975H157.749L161.612 38.051C163.578 37.0954 165.077 36.6176 166.107 36.6176C169.057 36.6176 170.672 38.4419 170.953 42.0907C173.247 38.4419 175.752 36.6176 178.468 36.6176C183.899 36.6176 187.364 39.6147 188.862 45.6091C191.156 39.5279 194.434 36.4873 198.694 36.4873C201.831 36.4873 204.313 38.0076 206.139 41.0482C207.965 44.0019 208.878 47.7375 208.878 52.255C208.878 53.5581 208.738 55.8602 208.457 59.1615C207.38 72.1926 206.841 79.8376 206.841 82.0963C206.841 86.1794 207.567 88.221 209.019 88.221C210.236 88.221 211.524 86.7441 212.881 83.7904C214.286 80.7498 215.41 76.102 216.252 69.847C217.844 72.9745 218.804 75.4504 219.132 77.2748C216.697 92.3909 212.39 99.949 206.209 99.949C203.306 99.949 201.153 98.2984 199.748 94.9972C198.343 91.6959 197.641 88.221 197.641 84.5722L199.327 55.7734C199.327 53.4278 198.999 51.4731 198.343 49.9094C197.688 48.3456 196.634 47.5637 195.183 47.5637C193.778 47.5637 192.537 48.5628 191.461 50.5609C190.384 52.559 189.635 55.1218 189.213 58.2493C187.809 80.3154 186.895 93.9981 186.474 99.2975H177.414Z"
+                fill="#050202"
+              />
+              <path
+                d="M269.87 99.5581C267.248 99.5581 265.258 97.9943 263.9 94.8669C262.589 91.6525 261.7 85.7016 261.232 77.0142C260.951 72.4967 260.67 66.6327 260.389 59.4221C257.111 61.2465 253.81 63.1577 250.486 65.1558L248.098 77.4051C247.63 79.7507 247.302 81.4448 247.115 82.4873C246.928 83.4429 246.577 84.9197 246.062 86.9178C245.593 88.916 245.172 90.3928 244.797 91.3484C244.47 92.2172 243.978 93.3466 243.322 94.7365C242.714 96.1265 242.082 97.1256 241.426 97.7337C239.741 99.2975 237.938 100.079 236.018 100.079C234.099 100.079 232.53 98.8196 231.313 96.3003C230.142 93.6941 229.557 90.5231 229.557 86.7875C229.557 85.745 229.604 84.6591 229.697 83.5297C230.306 75.1898 234.918 67.5883 243.533 60.7252C245.968 49.1709 250.018 29.711 255.683 2.34561C257.182 0.78187 259.078 0 261.372 0C261.887 0 262.379 0 262.847 0C263.315 0 263.877 0 264.533 0C265.235 0 266.101 0.260622 267.131 0.781867C267.178 4.86496 268.255 30.1889 270.362 76.7535C270.549 80.6629 270.807 83.2257 271.134 84.4419C271.462 85.5713 272.024 86.136 272.82 86.136C274.131 86.136 275.863 84.4854 278.017 81.1841C280.218 77.8829 282.184 73.7564 283.917 68.8045L285.883 77.6657L284.198 81.8357C279.281 93.6506 274.505 99.5581 269.87 99.5581ZM258.703 22.6742L252.593 54.3399C255.871 52.255 258.305 50.7347 259.897 49.779L258.703 22.6742ZM241.075 72.0623C236.721 76.1454 234.543 80.1416 234.543 84.051C234.543 86.831 235.105 88.221 236.229 88.221C237.072 88.221 237.751 87.0916 238.266 84.8329C238.874 82.4004 239.811 78.1435 241.075 72.0623Z"
+                fill="#050202"
+              />
+              <path
+                d="M298.796 84.4419L300.482 55.6431C300.482 53.2974 300.154 51.3428 299.499 49.779C298.843 48.2153 297.79 47.4334 296.338 47.4334C294.887 47.4334 293.646 48.5194 292.616 50.6912C291.633 52.7762 290.907 55.5562 290.439 59.0312C290.111 63.983 289.619 71.237 288.964 80.7932C288.308 90.2625 287.887 96.4306 287.7 99.2975H278.359C281.73 46.0434 283.767 13.3352 284.469 1.1728C285.452 0.477808 286.787 0.13031 288.472 0.13031C292.124 0.13031 293.95 2.12842 293.95 6.12464V6.90651C293.154 20.5458 292.312 32.5345 291.422 42.8725C293.904 38.7025 296.713 36.6176 299.85 36.6176C302.987 36.6176 305.468 38.0944 307.294 41.0482C309.121 44.0019 310.034 47.7375 310.034 52.255C310.034 53.4712 309.893 55.7299 309.612 59.0312C308.535 72.0623 307.997 79.7073 307.997 81.966C307.997 86.0491 308.723 88.0907 310.174 88.0907C311.391 88.0907 312.679 86.6138 314.037 83.6601C315.441 80.6195 316.565 75.9717 317.408 69.7167C319 72.8442 319.96 75.3201 320.287 77.1445C317.853 92.2606 313.545 99.8187 307.365 99.8187C304.462 99.8187 302.308 98.1681 300.903 94.8669C299.499 91.5656 298.796 88.0907 298.796 84.4419Z"
+                fill="#050202"
+              />
+              <path
+                d="M334.339 99.2975L337.008 56.034C337.008 53.6015 336.68 51.6034 336.024 50.0397C335.416 48.389 334.315 47.5637 332.723 47.5637C331.131 47.5637 329.82 48.9972 328.79 51.864C327.76 54.644 327.105 57.5977 326.824 60.7252C325.185 82.3569 324.272 95.2144 324.085 99.2975H314.674L318.537 38.051C320.503 37.0954 322.001 36.6176 323.031 36.6176C325.981 36.6176 327.596 38.4419 327.877 42.0907C330.172 38.4419 332.677 36.6176 335.392 36.6176C340.823 36.6176 344.288 39.6147 345.787 45.6091C348.081 39.5279 351.358 36.4873 355.619 36.4873C358.756 36.4873 361.238 38.0076 363.064 41.0482C364.89 44.0019 365.803 47.7375 365.803 52.255C365.803 53.5581 365.662 55.8602 365.381 59.1615C364.304 72.1926 363.766 79.8376 363.766 82.0963C363.766 86.1794 364.492 88.221 365.943 88.221C367.16 88.221 368.448 86.7441 369.806 83.7904C371.211 80.7498 372.334 76.102 373.177 69.847C374.769 72.9745 375.729 75.4504 376.057 77.2748C373.622 92.3909 369.314 99.949 363.134 99.949C360.231 99.949 358.077 98.2984 356.672 94.9972C355.268 91.6959 354.566 88.221 354.566 84.5722L356.251 55.7734C356.251 53.4278 355.923 51.4731 355.268 49.9094C354.612 48.3456 353.559 47.5637 352.107 47.5637C350.703 47.5637 349.462 48.5628 348.385 50.5609C347.308 52.559 346.559 55.1218 346.138 58.2493C344.733 80.3154 343.82 93.9981 343.399 99.2975H334.339Z"
+                fill="#050202"
+              />
+              <path
+                d="M402.233 99.949C397.925 99.949 395.069 97.169 393.664 91.6091C391.23 97.2559 388.093 100.079 384.253 100.079C380.461 100.079 377.254 97.6903 374.632 92.9122C372.056 88.1341 370.769 81.8357 370.769 74.017C370.769 62.6365 372.571 53.5581 376.177 46.7819C379.782 40.0057 384.347 36.6176 389.872 36.6176C390.012 36.6176 390.153 36.6176 390.293 36.6176C392.634 36.6176 394.788 37.356 396.755 38.8329C398.019 37.356 399.541 36.6176 401.32 36.6176C403.146 36.6176 404.457 37.0519 405.253 37.9207C404.831 44.3494 404.386 50.6912 403.918 56.9462C403.45 63.1143 403.122 67.5014 402.935 70.1077C402.514 76.0151 402.303 80.272 402.303 82.8782C402.303 86.3532 403.052 88.0907 404.55 88.0907C405.721 88.0907 406.962 86.6572 408.273 83.7904C409.584 80.8366 410.731 76.2323 411.714 69.9773C413.072 72.2361 414.008 74.7554 414.523 77.5354C413.165 85.7885 411.339 91.6091 409.045 94.9972C406.751 98.2984 404.48 99.949 402.233 99.949ZM390.925 46.7819C387.929 46.7819 385.541 48.9103 383.762 53.1671C382.029 57.3371 380.999 63.5921 380.672 71.932C380.625 72.7139 380.601 73.4523 380.601 74.1473C380.601 78.4042 381.14 81.7923 382.217 84.3116C383.34 86.831 384.768 88.0907 386.501 88.0907C389.451 88.0907 391.675 84.2247 393.173 76.4929L394.858 48.3456C393.501 47.3031 392.19 46.7819 390.925 46.7819Z"
+                fill="#050202"
+              />
+              <path
+                d="M436.285 5.34278C436.613 3.86591 437.338 2.64967 438.462 1.69405C439.633 0.651557 441.014 0.13031 442.606 0.13031C444.244 0.13031 445.462 0.564682 446.258 1.43342C445.79 8.20963 445.04 18.8517 444.01 33.3598C441.857 63.6789 440.78 80.4023 440.78 83.5297C440.78 86.5704 441.482 88.0907 442.887 88.0907C444.104 88.0907 445.368 86.7007 446.679 83.9207C447.99 81.0538 449.184 76.406 450.261 69.9773C451.572 72.3229 452.485 74.8857 453 77.6657C451.314 88.0038 448.669 94.6931 445.064 97.7337C443.425 99.2106 441.88 99.949 440.428 99.949C436.261 99.949 433.476 97.169 432.071 91.6091C429.636 97.2559 426.523 100.079 422.73 100.079C418.938 100.079 415.73 97.6903 413.108 92.9122C410.533 88.1341 409.246 81.8357 409.246 74.017C409.246 62.6365 411.048 53.5581 414.653 46.7819C418.259 40.0057 422.824 36.6176 428.349 36.6176C428.489 36.6176 428.63 36.6176 428.77 36.6176C430.69 36.6176 432.492 37.1388 434.178 38.1813L436.285 5.34278ZM429.402 46.7819C426.406 46.7819 424.018 48.9103 422.238 53.1671C420.506 57.3371 419.476 63.5921 419.148 71.932C419.101 72.7139 419.078 73.4523 419.078 74.1473C419.078 78.4042 419.616 81.7923 420.693 84.3116C421.817 86.831 423.245 88.0907 424.977 88.0907C427.927 88.0907 430.151 84.2247 431.649 76.4929L433.476 48.4759C431.93 47.3466 430.573 46.7819 429.402 46.7819Z"
+                fill="#050202"
+              />
+            </svg>
+          </div>
+          <div class="nav_links d-xl-flex d-lg-flex d-none">
+            <li><a href="#Banner_Portion">Home</a></li>
+            <li><a href="#About_Me_Portion">About</a></li>
+            <li><a href="#Service_Portion">Services</a></li>
+            <li><a href="#Skills_Portion">Skills</a></li>
+            <li><a href="#Qualification_Portion">Qulification</a></li>
+            <li><a href="#Portfolio_Portion">Portfolio</a></li>
+            <li><a href="#Price_Portion">Pricing</a></li>
+            <li><a href="#Contect_Me_Portion">Contect</a></li>
+            <li class="drop">
+              <a href="#lang_Me_Portion">EN</a>
+              <ul class="sub-nav">
+                <li><a href="">AR</a></li>
+                <li><a href="">DE</a></li>
+                <li><a href="">KRD</a></li>
+              </ul>
+            </li>
+          </div>
+          <div class="small_navbar">
+            <div
+              class="nav_btn dropdown-toggle"
+              id="menu1"
+              data-toggle="dropdown"
+            >
+              <span class="material-icons-outlined">grid_view</span>
+            </div>
+            <div
+              class="small_nav dropdown-menu"
+              role="menu"
+              aria-labelledby="menu1"
+              style="top: 10px !important"
+            >
+              <div class="d-flex align-items-center justify-content-between">
+                <div
+                  class="d-flex align-items-center justify-content-start flex-column"
+                >
+                  <li>
+                    <a href="#Banner_Portion"
+                      ><span class="material-icons-outlined">home</span
+                      ><span>Home</span></a
+                    >
+                  </li>
+                  <li>
+                    <a href="#About_Me_Portion"
+                      ><span class="material-icons-outlined">edit_note</span
+                      ><span>Skills</span></a
+                    >
+                  </li>
+                  <li>
+                    <a href="#Service_Portion"
+                      ><span class="material-icons-outlined">request_quote</span
+                      ><span>Pricing</span></a
+                    >
+                  </li>
+                </div>
+                <div
+                  class="d-flex align-items-center justify-content-start flex-column"
+                >
+                  <li>
+                    <a href="#Skills_Portion"
+                      ><span class="material-icons-outlined"
+                        >account_circle</span
+                      ><span>About</span></a
+                    >
+                  </li>
+                  <li>
+                    <a href="#Qualification_Portion"
+                      ><span class="material-icons-outlined">school</span
+                      ><span>Qualification</span></a
+                    >
+                  </li>
+                  <li>
+                    <a href="#Portfolio_Portion"
+                      ><span class="material-icons-outlined"
+                        >perm_phone_msg</span
+                      ><span>Contect</span></a
+                    >
+                  </li>
+                </div>
+                <div
+                  class="d-flex align-items-center justify-content-start flex-column"
+                >
+                  <li>
+                    <a href="#Price_Portion"
+                      ><span class="material-icons-outlined">handyman</span
+                      ><span>Services</span></a
+                    >
+                  </li>
+                  <li>
+                    <a href="#Contect_Me_Portion"
+                      ><span class="material-icons-outlined"
+                        >business_center</span
+                      ><span>Portfolio</span></a
+                    >
+                  </li>
+                  <li>
+                    <a href="#Contect_Me_Portion"
+                      ><span class="material-icons-outlined">help_outline</span
+                      ><span>Contact</span></a
+                    >
+                  </li>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ========================================/NAVBAR PORTION======================================= -->
+    <!-- ========================================BANNER PORTION======================================== -->
+    <div class="container-fluid Banner_Portion" id="Banner_Portion">
+      <div class="col-xl-10 mx-auto">
+        <div
+          class="col-12 d-flex align-items-center justify-content-between flex-xl-row flex-lg-row flex-column-reverse"
+        >
+          <div class="col-xl-6 col-lg-7 col-md-11 col-12" data-aos="zoom-in">
+            <div class="personal_info">
+              <span>Welcome</span>
+              <h1>Ayham Ahmad</h1>
+              <h4>Full Stack Developer</h4>
+              <p>
+                Hello I'm Ayham full stack developer do useful perfect things
+              </p>
+            </div>
+            <div class="contect_info">
+              <li>
+                <span class="material-icons">email</span
+                ><span>&nbsp;Ayham@Ayhamahmad.com</span>
+              </li>
+              <li>
+                <span class="material-icons">phone_in_talk</span
+                ><span>&nbsp;+9647511028834</span>
+              </li>
+              <li>
+                <span class="material-icons">location_on</span
+                ><span>&nbsp;Iraq ,Kurdstan ,Erbil</span>
+              </li>
+              <button>
+                <span>Hire me!&nbsp;</span
+                ><span class="material-icons-outlined">handshake</span>
+              </button>
+            </div>
+          </div>
+          <div
+            class="col-xl-4 col-lg-5 col-md-8 col-sm-9 col-12"
+            data-aos="zoom-in"
+          >
+            <div class="img_container banner_img">
+              <img src="images/profile.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ========================================/BANNER PORTION======================================== -->
+    <!-- ======================================== ABOUT US PORTION====================================== -->
+    <div class="container-fluid About_Me_Portion" id="About_Me_Portion">
+      <div class="col-xl-10 mx-auto">
+        <div
+          class="col-12 d-flex align-items-center justify-content-around flex-xl-row flex-lg-row flex-md-row flex-column"
+        >
+          <div
+            class="col-xl-5 col-lg-6 col-md-5 col-sm-10 col-12 about_banner"
+            data-aos="zoom-out"
+          >
+            <div class="img_container">
+              <img src="images/About_Me.png" alt="" />
+            </div>
+          </div>
+          <div
+            class="col-xl-6 col-lg-6 col-md-7 col-sm-10 col-12 about_detail"
+            data-aos="zoom-out"
+          >
+            <div class="Portion_Heading">
+              <h2>ABOUT ME</h2>
+            </div>
+            <p>
+              I have deep understanding of many technical subjects, I am an avid
+              open source developer.Love to be creative and useful
+            </p>
+            <div class="tags row mx-auto">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>SCSS</li>
+              <li>BOOTSTRAP</li>
+              <li>REACT</li>
+              <li>VUE</li>
+              <li>PHP</li>
+              <li>MYSQL</li>
+              <li>JAVASCRIPT</li>
+              <li>J QUERY</li>
+              <li>GIT</li>
+              <li>C#</li>
+              <li>LARAVEL</li>
+            </div>
+            <button>
+              <span>Download CV&nbsp;</span><span class="jam jam-upload"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ========================================/ABOUT US PORTION====================================== -->
+    <!-- ======================================== SERVICES PORTION====================================== -->
+    <div class="container-fluid Service_Portion" id="Service_Portion">
+      <div class="col-xl-10 mx-auto">
+        <div class="Portion_Heading">
+          <h2>What I Offer My Clients</h2>
+          <span>What I Can Do!</span>
+        </div>
+        <div class="col-12 row mx-auto">
+          <div
+            class="col-xl-4 col-lg-4 col-md-6 col-sm-9 col-12"
+            data-aos="zoom-in"
+          >
+            <div class="service_card">
+              <div class="icon_container">
+                <span class="material-icons-outlined"
+                  >integration_instructions</span
+                >
+              </div>
+              <div class="service_detail">
+                <h4>Web Designing</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <a href=""
+                  ><span>view more</span
+                  ><span class="jam jam-arrow-circle-right"></span
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-xl-4 col-lg-4 col-md-6 col-sm-9 col-12"
+            data-aos="zoom-in"
+          >
+            <div class="service_card">
+              <div class="icon_container">
+                <span class="material-icons-outlined">settings_ethernet</span>
+              </div>
+              <div class="service_detail">
+                <h4>Web Developement</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <a href=""
+                  ><span>view more</span
+                  ><span class="jam jam-arrow-circle-right"></span
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-xl-4 col-lg-4 col-md-6 col-sm-9 col-12"
+            data-aos="zoom-in"
+          >
+            <div class="service_card">
+              <div class="icon_container">
+                <span class="material-icons-outlined">devices</span>
+              </div>
+              <div class="service_detail">
+                <h4>App Developement</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <a href=""
+                  ><span>view more</span
+                  ><span class="jam jam-arrow-circle-right"></span
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ========================================/SERVICES PORTION====================================== -->
+    <!-- ======================================== SKILLS PORTION======================================== -->
+    <div class="container-fluid Skills_Portion" id="Skills_Portion">
+      <div class="col-xl-10 mx-auto">
+        <div class="Portion_Heading">
+          <h2>MY SKILLS</h2>
+          <span>Skills</span>
+        </div>
+        <div class="col-12 Skills row mx-auto">
+          <div
+            class="col-xl-6 col-lg-6 col-md-10 col-sm-11 col-12"
+            data-aos="zoom-in"
+          >
+            <div class="progressbar_container mx-auto">
+              <h3>Technical Skills</h3>
+              <div class="mb-4">
+                <div class="tech_skills skill_set show_skills">
+                  <span class="icon material-icons-outlined"
+                    >integration_instructions</span
+                  >
+                  <div>
+                    <h5>Frontend Developement</h5>
+                    <span>3 years</span>
+                  </div>
+                  <span class="expand_more material-icons-outlined"
+                    >chevron_right</span
+                  >
+                </div>
+                <div class="skills">
+                  <div class="label">
+                    <span>HTML</span>
+                    <span>95%</span>
+                  </div>
+                  <div class="progress_bar">
+                    <div class="progress_indi"></div>
+                  </div>
+                  <div class="label">
+                    <span>CSS</span>
+                    <span>85%</span>
+                  </div>
+                  <div class="progress_bar">
+                    <div class="progress_indi" style="width: 85%"></div>
+                  </div>
+
+                  <div class="label">
+                    <span>React JS</span>
+                    <span>75%</span>
+                  </div>
+                  <div class="progress_bar">
+                    <div class="progress_indi" style="width: 75%"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-4">
+                <div class="tech_skills skill_set">
+                  <span class="icon material-icons-outlined"
+                    >settings_ethernet</span
+                  >
+                  <div>
+                    <h5>Backend Developement</h5>
+                    <span>6 years</span>
+                  </div>
+                  <span class="expand_more material-icons-outlined"
+                    >chevron_right</span
+                  >
+                </div>
+                <div class="skills">
+                  <div class="label">
+                    <span>PHP</span>
+                    <span>91%</span>
+                  </div>
+                  <div class="progress_bar">
+                    <div class="progress_indi" style="width: 91%"></div>
+                  </div>
+                  <div class="label">
+                    <span>Node.js</span>
+                    <span>80%</span>
+                  </div>
+                  <div class="progress_bar">
+                    <div class="progress_indi" style="width: 90%"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-4">
+                <div class="tech_skills skill_set">
+                  <span class="icon material-icons-outlined">
+                    description
+                    </span>
+                  <div>
+                    <h5>Documentions</h5>
+                    <span>6 years</span>
+                  </div>
+                  <span class="expand_more material-icons-outlined"
+                    >chevron_right</span
+                  >
+                </div>
+                <div class="skills">
+                  <div class="label">
+                    <span>UML</span>
+                    <span>91%</span>
+                  </div>
+                  <div class="progress_bar">
+                    <div class="progress_indi" style="width: 91%"></div>
+                  </div>
+                  <div class="label">
+                    <span>API</span>
+                    <span>80%</span>
+                  </div>
+                  <div class="progress_bar">
+                    <div class="progress_indi" style="width: 90%"></div>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+              <div class="mb-4">
+                <div class="tech_skills skill_set">
+                  <span class="icon material-icons-outlined">devices</span>
+                  <div>
+                    <h5>Data Anlaysis</h5>
+                    <span>3 years</span>
+                  </div>
+                  <span class="expand_more material-icons-outlined"
+                    >chevron_right</span
+                  >
+                </div>
+                <div class="skills">
+                  <div class="label">
+                    <span>Spss</span>
+                    <span>90%</span>
+                  </div>
+                  <div class="progress_bar">
+                    <div class="progress_indi" style="width: 90%"></div>
+                  </div>
+                  <div class="label">
+                    <span>SQL Engine</span>
+                    <span>78%</span>
+                  </div>
+                  <div class="progress_bar">
+                    <div class="progress_indi" style="width: 78%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-xl-6 col-lg-6 col-md-10 col-sm-11 col-12"
+            data-aos="zoom-in"
+          >
+            <h3>Professional Skills</h3>
+            <div class="col-xl-9 progress_container row mx-auto">
+              <div class="col-6">
+                <div class="circular_progress"><span>90%</span></div>
+                <span>Communication</span>
+              </div>
+              <div class="col-6">
+                <div
+                  class="circular_progress"
+                  style="
+                    background: conic-gradient(
+                      var(--theme_color) 0%,
+                      var(--theme_color) 82%,
+                      #f2f2f2 82%,
+                      #f2f2f2 100%
+                    );
+                  "
+                >
+                  <span>82%</span>
+                </div>
+                <span>Analytical</span>
+              </div>
+              <div class="col-6">
+                <div
+                  class="circular_progress"
+                  style="
+                    background: conic-gradient(
+                      var(--theme_color) 0%,
+                      var(--theme_color) 65%,
+                      #f2f2f2 65%,
+                      #f2f2f2 100%
+                    );
+                  "
+                >
+                  <span>65%</span>
+                </div>
+                <span>Team Work</span>
+              </div>
+              <div class="col-6">
+                <div
+                  class="circular_progress"
+                  style="
+                    background: conic-gradient(
+                      var(--theme_color) 0%,
+                      var(--theme_color) 75%,
+                      #f2f2f2 75%,
+                      #f2f2f2 100%
+                    );
+                  "
+                >
+                  <span>75%</span>
+                </div>
+                <span>Leadership</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ========================================/SKILLS PORTION======================================== -->
+    <!-- ======================================== QUALIFICATION PORTION================================= -->
+    <div
+      class="container-fluid Qualification_Portion"
+      id="Qualification_Portion"
+    >
+      <div class="col-xl-10 mx-auto">
+        <div class="Portion_Heading">
+          <h2>Qualification</h2>
+          <span>My Experience</span>
+        </div>
+        <div
+          class="col-xl-7 col-lg-7 col-md-7 col-12 qualification_tabs mx-auto"
+        >
+          <div class="education_tab active">
+            <span class="material-icons-outlined">school</span
+            ><span>&nbsp;Education</span>
+          </div>
+          <div class="work_tab">
+            <span class="material-icons-outlined">business_center</span
+            ><span>&nbsp;Experience</span>
+          </div>
+        </div>
+        <div
+          class="col-xl-9 col-lg-9 col-12 mx-auto timeline education"
+          data-aos="zoom-out"
+        >
+          <div class="timeline_item">
+            <h4>M.S Web Sciences</h4>
+            <p>Syrian Virtual University</p>
+            <span
+              ><span class="material-icons-outlined">calendar_month</span
+              ><span>&nbsp;2016 - 2019</span></span
+            >
+          </div>
+          
+          <div class="">
+         
+          </div>
+          <div class="">
+         
+          </div>
+          <div class="timeline_item">
+            <h4>BIT</h4>
+            <p>Syrian Virtual University</p>
+            <span
+              ><span class="material-icons-outlined">calendar_month</span
+              ><span>&nbsp;2011 - 2015</span></span
+            >
+          </div>
+         
+          <span class="timeline_icon material-icons-outlined" style="--i: 0.1"
+            >devices</span
+          >
+          <span class="timeline_icon material-icons-outlined" style="--i: 3.03"
+            >terminal</span
+          >
+          
+        </div>
+        <div
+          class="col-xl-9 col-lg-9 col-12 mx-auto timeline work"
+          data-aos="zoom-out"
+        >
+          <div class="timeline_item">
+            <h4>Full Stack Developer</h4>
+            <p>NookAkd</p>
+            <span
+              ><span class="material-icons-outlined">calendar_month</span
+              ><span>&nbsp;2020 - 2022</span></span
+            >
+          </div>
+          <div class="timeline_item">
+            <h4>Full Stack Developer</h4>
+            <p>City-link</p>
+            <span
+              ><span class="material-icons-outlined">calendar_month</span
+              ><span>&nbsp;2019 - 2020</span></span
+            >
+          </div>
+          <div class="timeline_item">
+            <h4>Software Engineer</h4>
+            <p>Syrian Telecom</p>
+            <span
+              ><span class="material-icons-outlined">calendar_month</span
+              ><span>&nbsp;2015 - 2019</span></span
+            >
+          </div>
+          <div class="timeline_item">
+            <h4>L2 Technical Support</h4>
+            <p>Syrian Telecom</p>
+            <span
+              ><span class="material-icons-outlined">calendar_month</span
+              ><span>&nbsp;2010 - 2015</span></span
+            >
+          </div>
+          <span class="timeline_icon material-icons-outlined" style="--i: 0.1"
+            >devices</span
+          >
+          <span class="timeline_icon material-icons-outlined" style="--i: 1.03"
+            >terminal</span
+          >
+          <span class="timeline_icon material-icons-outlined" style="--i: 1.95"
+            >settings_ethernet</span
+          >
+          <span class="timeline_icon material-icons-outlined" style="--i: 2.9"
+            >integration_instructions</span
+          >
+        </div>
+      </div>
+    </div>
+    <!-- ========================================/QUALIFICATION PORTION================================= -->
+    <!-- ======================================== PORTFOLIO PORTION================================= -->
+    <div class="container-fluid Portfolio_Portion" id="Portfolio_Portion">
+      <div class="col-xl-10 mx-auto">
+        <div class="Portion_Heading">
+          <h2>My Recent Work</h2>
+          <span>My Work</span>
+        </div>
+        <div class="col-12">
+          <div class="work_tabs">
+            <li data-filter="*" class="active">All</li>
+            <li data-filter=".web">Webs</li>
+            <li data-filter=".app">Apps</li>
+            <li data-filter=".ui_ux">UI/UX</li>
+            <li data-filter=".games">Docs</li>
+          </div>
+          <div class="col-12 px-0 row mx-auto work_items" data-aos="zoom-out">
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 item web">
+              <div class="detail">
+                <p>Project Name</p>
+                <span>Web Design</span>
+              </div>
+              <img src="images/Portfolio_6.webp" alt="" />
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 item app">
+              <div class="detail">
+                <p>Project Name</p>
+                <span>Web Design</span>
+              </div>
+              <img src="images/Portfolio_2.webp" alt="" />
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 item app">
+              <div class="detail">
+                <p>Project Name</p>
+                <span>Web Design</span>
+              </div>
+              <img src="images/Portfolio_7.jpg" alt="" />
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 item web">
+              <div class="detail">
+                <p>Project Name</p>
+                <span>Web Design</span>
+              </div>
+              <img src="images/Portfolio_3.webp" alt="" />
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 item web">
+              <div class="detail">
+                <p>Project Name</p>
+                <span>Web Design</span>
+              </div>
+              <img src="images/Portfolio_4.webp" alt="" />
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 item web">
+              <div class="detail">
+                <p>Project Name</p>
+                <span>Web Design</span>
+              </div>
+              <img src="images/Portfolio_5.webp" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ========================================/PORTFOLIO PORTION================================= -->
+    <!-- ======================================== PRICE PORTION===================================== -->
+    <div class="container-fluid Price_Portion" id="Price_Portion">
+      <div class="col-xl-10 mx-auto">
+        <div class="Portion_Heading">
+          <h2>Best Price For You</h2>
+          <span>WHat We Charge</span>
+        </div>
+        <div class="col-12 row mx-auto price_card_container">
+          <div
+            class="col-xl-4 col-lg-4 col-md-6 col-sm-9 col-12"
+            data-aos="zoom-in"
+          >
+            <div class="price_card">
+              <span class="material-icons-outlined">event_available</span>
+              <h4>Full Time Work</h4>
+              <p>I am available for full time</p>
+              <b>$1000 <span>/month</span></b>
+              <div>
+                <li>
+                  <span class="material-icons">check_box</span
+                  ><span>Web Developement</span>
+                </li>
+                <li>
+                  <span class="material-icons">check_box</span
+                  ><span>App Developement</span>
+                </li>
+                <li>
+                  <span class="material-icons">check_box</span
+                  ><span>Web Designing</span>
+                </li>
+                <li>
+                  <span class="material-icons">check_box</span
+                  ><span>Docs</span>
+                </li>
+              </div>
+              <button>
+                <span>Hire me!&nbsp;</span
+                ><span class="material-icons-outlined">handshake</span>
+              </button>
+            </div>
+          </div>
+          <div
+            class="col-xl-4 col-lg-4 col-md-6 col-sm-9 col-12"
+            data-aos="zoom-in"
+          >
+            <div class="price_card">
+              <span class="material-icons-outlined">task</span>
+              <h4>Fixed Project</h4>
+              <p>Based on Your Project</p>
+              <b>$$$ <span>/project</span></b>
+              <div>
+                <li>
+                  <span class="material-icons">check_box</span
+                  ><span>Web Developement</span>
+                </li>
+                <li>
+                  <span class="material-icons">check_box</span
+                  ><span>App Developement</span>
+                </li>
+                <li>
+                  <span class="material-icons">check_box</span
+                  ><span>Web Designing</span>
+                </li>
+                <li>
+                  <span class="material-icons">check_box</span
+                  ><span>Docs</span>
+                </li>
+              </div>
+              <button>
+                <span>Hire me!&nbsp;</span
+                ><span class="material-icons-outlined">handshake</span>
+              </button>
+            </div>
+          </div>
+          <div
+            class="col-xl-4 col-lg-4 col-md-6 col-sm-9 col-12"
+            data-aos="zoom-in"
+          >
+            <div class="price_card">
+              <span class="material-icons-outlined">hourglass_top</span>
+              <h4>Hourely Work</h4>
+              <p>Based on Developement</p>
+              <b>$10-20 <span>/Hourely</span></b>
+              <div>
+                <li>
+                  <span class="material-icons">check_box</span
+                  ><span>Web Developement</span>
+                </li>
+                <li>
+                  <span class="material-icons">check_box</span
+                  ><span>App Developement</span>
+                </li>
+                <li>
+                  <span class="material-icons">check_box</span
+                  ><span>Web Designing</span>
+                </li>
+                <li>
+                  <span class="material-icons">check_box</span
+                  ><span>Docs</span>
+                </li>
+              </div>
+              <button>
+                <span>Hire me!&nbsp;</span
+                ><span class="material-icons-outlined">handshake</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ========================================/PRICE PORTION===================================== -->
+    <!-- ======================================== REVIEW PORTION===================================== -->
+    <div class="container-fluid Review_Portion" id="Review_Portion">
+      <div class="col-xl-10 mx-auto">
+        <div class="Portion_Heading">
+          <h2>What Peolple Says About Me</h2>
+          <span>Client Reviews</span>
+        </div>
+        <div class="col-12">
+          <div class="owl-carousel owl-theme">
+            <div class="review_card item" data-aos="zoom-out">
+              <div class="client_img">
+                <img src="images/omar.jfif" alt="" />
+              </div>
+              <h4>Dr . Omar</h4>
+              <span>Doctor</span>
+              <p>
+                <q
+                  >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim.</q
+                >
+              </p>
+              <span class="material-icons-outlined">format_quote</span>
+            </div>
+            <div class="review_card item" data-aos="zoom-out">
+              <div class="client_img">
+                <img src="images/Bassel.jpg" alt="" />
+              </div>
+              <h4>Bassel Suhiani</h4>
+              <span>Football coach</span>
+              <p>
+                <q
+                  >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim.</q
+                >
+              </p>
+              <span class="material-icons-outlined">format_quote</span>
+            </div>
+            <div class="review_card item" data-aos="zoom-out">
+              <div class="client_img">
+                <img src="images/Dler.jfif" alt="" />
+              </div>
+              <h4>Dler Khoshna</h4>
+              <span>Trader</span>
+              <p>
+                <q
+                  >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim.</q
+                >
+              </p>
+              <span class="material-icons-outlined">format_quote</span>
+            </div>
+            <div class="review_card item" data-aos="zoom-out">
+              <div class="client_img">
+                <img src="images/mohmad.jfif" alt="" />
+              </div>
+              <h4>Mohmad</h4>
+              <span>Engineer </span>
+              <p>
+                <q
+                  >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim.</q
+                >
+              </p>
+              <span class="material-icons-outlined">format_quote</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ========================================/REVIEW PORTION===================================== -->
+    <!-- ======================================== CONTECT ME PORTION================================= -->
+    <div class="container-fluid Contect_Me_Portion" id="Contect_Me_Portion">
+      <div class="col-xl-10 mx-auto">
+        <div class="Portion_Heading">
+          <h2>Contect Me Now</h2>
+          <span>Let's Talk</span>
+        </div>
+        <div class="col-12 row mx-auto">
+          <div
+            class="col-xl-5 col-lg-5 col-md-6 col-sm-11 col-12"
+            data-aos="zoom-in"
+          >
+            <div class="contect_card">
+              <div class="icon">
+                <span class="material-icons-outlined">mail</span>
+              </div>
+              <div class="contect_detail">
+                <h5>Email Id</h5>
+                <span>ayham@ayhamahmad.com</span>
+                <span>ayham42095@gmail.com</span>
+              </div>
+            </div>
+            <div class="contect_card">
+              <div class="icon">
+                <span class="material-icons-outlined">phone</span>
+              </div>
+              <div class="contect_detail">
+                <h5>Phone No</h5>
+                <span>+9647511028834</span>
+                <span>+9647511028834</span>
+              </div>
+            </div>
+            <div class="contect_card">
+              <div class="icon">
+                <span class="material-icons-outlined">location_on</span>
+              </div>
+              <div class="contect_detail">
+                <h5>Address</h5>
+                <span>IRAQ,</span>
+                <span>ERBIL(KRD), 100 s</span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-xl-7 col-lg-7 col-md-6 col-sm-11 col-12"
+            data-aos="zoom-in"
+          >
+            <input type="text" placeholder="First Name" />
+            <input type="text" placeholder="Last Name" />
+            <input type="email" placeholder="Email Id" />
+            <textarea placeholder="Message"></textarea>
+            <button>
+              <span>Send&nbsp;</span
+              ><span class="material-icons-outlined">send</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ========================================/CONTECT ME PORTION================================= -->
+    <!-- ======================================== FOOTER PORTION================================= -->
+    <div class="container-fluid Footer_Portion">
+      <div class="col-xl-10 mx-auto">
+        <div
+          class="col-12 d-flex align-items-center justify-content-between flex-xl-row flex-lg-row flex-md-row flex-sm-row flex-column"
+        >
+          <p class="mb-0">All rights reserved By Ayham Ahmad 2022</p>
+          <div class="social_media">
+            <li><a href="" class="jam jam-twitter"></a></li>
+            <li><a href="" class="jam jam-facebook"></a></li>
+            <li><a href="" class="jam jam-pinterest"></a></li>
+            <li><a href="" class="jam jam-youtube"></a></li>
+            <li><a href="" class="jam jam-whatsapp"></a></li>
+            <li><a href="" class="jam jam-instagram"></a></li>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ========================================/FOOTER PORTION================================= -->
+    <!-- ======================================== SCROLL TO TOP================================= -->
+    <button class="scroll_to_top">
+      <span class="jam jam-arrow-up"></span>
+    </button>
+    <!-- ========================================/SCROLL TO TOP================================= -->
+
+    <script type="text/javascript" src="js/script.js"></script>
+    <!-- AOS ANIMATION -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 150,
+        duration: 700,
+      });
+    </script>
+  </body>
+</html>
