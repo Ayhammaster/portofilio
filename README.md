@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://www.ayhamahmad.com/" target="_blank" rel="noreferrer"><img src="https://ayhamahmad.com/img/Ayham.png" width="100" height="100"  alt="my banner"></a>
+  <a href="https://www.ayhamahmad.com/" target="_blank" rel="noreferrer"><img src="https://ayhamahmad.com/img/Ayham.png" style="bprder-radius:50%" width="300" height="300"  alt="my banner"></a>
 </p>
 
 <h3 align="center">
